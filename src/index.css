@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.styled-div::before {
+    content: '"';
+    position: relative;
+    top: -32px;
+    font-size: 55px;
+    background-color: #282C33;
+    left: 10px;
+  }
+.styled-div::after {
+    content: '"';
+    position: relative;
+    top: 69px;
+    font-size: 55px;
+    background-color: #282C33;
+    height: 40px;
+    display: inline-block;
+  }
+
