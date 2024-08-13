@@ -176,7 +176,7 @@ function App() {
             </div>
           </div>
           <div className="flex justify-center items-center mt-5 text-gray mb-0">
-          © Copyright 2022. Made by Elias
+          © Copyright 2024. Made by Raushan
           </div>
         </div>
       </div>
