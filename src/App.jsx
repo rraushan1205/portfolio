@@ -13,7 +13,7 @@ function App() {
     <>
       <div className="bg-background font-fira">
         <Navbar />
-        <div className="grid lg:grid-cols-2 sm:grid-rows-1 mx-[171px] mt-[62px]">
+        <div className="grid lg:grid-cols-2 sm:grid-rows-1 lg:mx-[171px] mt-[62px]">
           <div className="">
             <div className="flex ">
               <div className="mt-[74px] text-[32px] text-white">
@@ -28,7 +28,7 @@ function App() {
               Contact Me !!
             </div>
           </div>
-          <div className="w-[469px] h-[386px]">
+          <div className="lg:w-[469px] w-[269px]  lg:h-[386px]">
             <img src={pfp} alt="" />
           </div>
         </div>
@@ -42,17 +42,17 @@ function App() {
           </div>
         </section>
         </div>
-        <div className="flex mt-[47px] mx-[171px] text-white text-[32px]">
+        <div className="flex mt-[47px] lg:mx-[171px] text-white text-[32px]">
           <span className="text-primary">#</span>
           <div>projects</div>
           <div className="flex justify-center items-center">
             <hr className="lg:w-[511px] w-[100px] h-[2px] bg-primary border-0 flex  mx-[10px] shrink-1" />
           </div>
-          <div className="text-[16px] mt-[5px] ml-[200px]">
+          <div className="text-[16px] mt-[5px] lg:ml-[200px]">
             view all &#8594;
           </div>
         </div>
-        <div className="mx-[171px] text-white mt-[48px] flex gap-10 flex-wrap">
+        <div className="lg:mx-[171px] text-white mt-[48px] flex gap-10 flex-wrap">
           <div className="border-2 border-gray shrink-0">
             <img src={html} alt="" className="w-[330.58px] h-[210px]" />
             <div className="border-y-2 border-gray px-3 text-gray">HTML</div>
@@ -84,7 +84,7 @@ function App() {
             {/* buttons */}
           </div>
         </div>
-        <div className="flex mt-[47px] mx-[171px] text-white text-[32px]">
+        <div className="flex mt-[47px] lg:mx-[171px] text-white text-[32px]">
           <span className="text-primary">#</span>
           <div>Skillls</div>
           <div className="flex justify-center items-center">
@@ -92,7 +92,7 @@ function App() {
           </div>
           {/* <div className="text-[16px] mt-[5px] ml-[200px]">view all &#8594;</div> */}
         </div>
-        <div className="flex mx-[171px] gap-10 flex-wrap">
+        <div className="flex lg:mx-[171px] gap-10 flex-wrap">
           <div className="flex mt-[50px]">
             <img src={dot2} alt="" className="h-fit w-fit mr-[150px]" />
             <div className="border-2 border-gray w-[5.375rem] h-[86px]"></div>
@@ -136,11 +136,11 @@ function App() {
           </div>
         </div>
         <div className="border-2 border-gray w-[155px] h-[155px] relative bottom-[-300px] left-[-50px]"></div>
-        <div className="flex mt-[47px] mx-[171px] text-white text-[32px]">
+        <div className="flex mt-[47px] lg:mx-[171px] text-white text-[32px]">
           <span className="text-primary">#</span>
           <div>about-me</div>
           <div className="flex justify-center items-center">
-            <hr className="w-[326px] h-[2px] bg-primary border-0 flex  mx-[10px]" />
+            <hr className="lg:w-[326px] h-[2px] bg-primary border-0 flex  mx-[10px]" />
           </div>
         </div>
         <div className="grid lg:grid-cols-2 grid-cols-1 mx-[130px] lg:mx-[171px]">
@@ -183,7 +183,7 @@ function App() {
             />
           </div>
         </div>
-        <div className="flex mt-[47px] mx-[171px] text-white text-[32px]">
+        <div className="flex mt-[47px] lg:mx-[171px] text-white text-[32px]">
           <span className="text-primary">#</span>
           <div>contacts</div>
           <div className="flex justify-center items-center">
