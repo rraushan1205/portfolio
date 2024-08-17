@@ -8,9 +8,16 @@ import dot2 from "../img/dot2.png";
 import dot3 from "../img/dot3.png";
 import "./index.css";
 import Navbar from "./Navbar";
+import { motion, useScroll, useSpring } from "framer-motion";
+
+
+
 function App() {
+  const { scrollYProgress } = useScroll();
+  const scaleX = useSpring(scrollYProgress);
   return (
     <>
+    <motion.div style={{ scaleX }} className="fixed top-0 left-0 right-0 h-1 bg-primary z-50" />
       <div className="bg-background font-fira">
         <Navbar />
         <div className="lg:mx-[171px] mx-10">
@@ -169,16 +176,16 @@ function App() {
                 Read more &#8594;
               </button>
             </div>
-            <div className="flex">
+            <div className="flex justify-center">
+              <img
+                src={dot}
+                alt=""
+                className="flex relative lg:left-[280px] left-[125px] h-fit top-10"
+              />
               <img
                 src={abtme}
                 alt=""
                 className="border-b-2 border-primary ml-10 lg:ml-[170px] lg:w-[343px] lg:h-[490px] w-[200px] h-300px lg:mt-0 mt-10"
-              />
-              <img
-                src={dot}
-                alt=""
-                className="flex relative lg:left-[-300px] left-[-220px] h-fit top-10"
               />
               <img
                 src={dot3}
