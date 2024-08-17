@@ -2,7 +2,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-.styled-div::before {
+/* .styled-div::before {
     content: '"';
     position: relative;
     top: -32px;
@@ -18,5 +18,5 @@
     background-color: #282C33;
     height: 40px;
     display: inline-block;
-  }
+  } */
 
