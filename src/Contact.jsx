@@ -41,7 +41,7 @@ function Contact() {
         <img src={dot2} alt=""  className="absolute bottom-[200px] scale-[0.8]"/>
         <div className="flex mt-[47px] text-white text-[24px] lg:text-[32px] mx-[171px]">
           <span className="text-primary">#</span>
-          <div>all media</div>
+          <div>all-media</div>
         </div> 
         <div className="mx-[171px] flex text-white mt-5 gap-8">
           <span className="flex">

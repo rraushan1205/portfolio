@@ -10,14 +10,14 @@ export default function Navbar() {
   return (
     <nav className="w-full bg-background h-[61px] px-4 sm:px-8 flex justify-between items-center">
       {/* Logo */}
-      <span className="font-bold text-white ml-[171px]">Raushan</span>
+      <span className="font-bold text-white ml-[50px] sm:ml-[100px] md:ml-[171px]">Raushan</span>
 
       {/* Desktop Menu */}
       <div className="hidden lg:flex gap-10 items-end text-gray">
         <div><span className="text-primary">#</span><Link to="/portfolio.io/">Home</Link></div>
         <div><span className="text-primary">#</span>Works</div>
         <div><span className="text-primary">#</span><Link to="/portfolio.io/about">About-me</Link></div>
-        <div><span className="text-primary">#</span>Contacts</div>
+        <div><span className="text-primary">#</span><Link to="/portfolio.io/contact">Contacts</Link></div>
         <div>
           <select className="bg-transparent text-white" name="lang" id="lang">
             <option value="EN">EN</option>
@@ -40,10 +40,10 @@ export default function Navbar() {
       {/* Mobile Menu */}
       {isOpen && (
         <div className="lg:hidden absolute top-16 left-0 w-full bg-background flex flex-col items-center gap-4 text-gray py-4">
-          <div><span className="text-primary">#</span>Home</div>
+          <div><span className="text-primary">#</span><Link to="/portfolio.io/">Home</Link></div>
           <div><span className="text-primary">#</span>Works</div>
-          <div><span className="text-primary">#</span>About-me</div>
-          <div><span className="text-primary">#</span>Contacts</div>
+          <div><span className="text-primary">#</span><Link to="/portfolio.io/about">About-me</Link></div>
+          <div><span className="text-primary">#</span><Link to="/portfolio.io/contact">Contacts</Link></div>
           <div>
             <select className="bg-transparent text-white" name="lang" id="lang">
               <option value="EN">EN</option>

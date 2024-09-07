@@ -15,11 +15,11 @@ export default function Footer() {
           </div>
           <div className="flex justify-between">
             <div className="text-white text-wrap">
-              {" "}
+              
               Web designer and front-end developer
             </div>
             <div className="flex shrink-0">
-              <img src={media} alt="" />
+              <img src={media} alt=""  className='h-fit'/>
             </div>
           </div>
           <div className="flex justify-center items-center mt-5 text-gray mb-0">
