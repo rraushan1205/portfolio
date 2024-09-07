@@ -8,8 +8,13 @@ import dot2 from "../img/dot2.png";
 import dot3 from "../img/dot3.png";
 import "./index.css";
 import Navbar from "./Navbar";
+import Footer from "./Footer";
 import { motion, useScroll, useSpring } from "framer-motion";
-
+import { Routes, Route, Outlet, Link } from "react-router-dom";
+// import {
+//   createBrowserRouter,
+//   RouterProvider,
+// } from "react-router-dom";
 
 
 function App() {
@@ -17,6 +22,7 @@ function App() {
   const scaleX = useSpring(scrollYProgress);
   return (
     <>
+    
     <motion.div style={{ scaleX }} className="fixed top-0 left-0 right-0 h-1 bg-primary z-50" />
       <div className="bg-background font-fira">
         <Navbar />
@@ -33,8 +39,8 @@ function App() {
                 crafts responsive websites where technologies meet creativity
               </div>
               <div className="flex items-center justify-center text-white text-[16px] w-[148px] h-[37px] border-[1px] border-primary mt-[24px]">
-                Contact Me !!
-              </div>
+                <Link to="/portfolio.io/contact">Contact Me !!</Link>
+              </div>2
             </div>
             <div className="lg:w-[469px] w-[269px]  lg:h-[386px]">
               <img src={pfp} alt="" />
@@ -227,28 +233,7 @@ function App() {
             </div>
           </div>
         </div>
-        <hr className="w-full h-[2px] bg-gray border-0 flex mt-[100px]" />
-        <div className="lg:mx-[171px] mx-5 py-[32px] mx-">
-          <div className="flex justify-between">
-            <div>
-              <span className="text-white"> Raushan</span> &nbsp;{" "}
-              <span className="text-gray">rraushan1205</span>
-            </div>
-            <div className="text-white">Media</div>
-          </div>
-          <div className="flex justify-between">
-            <div className="text-white text-wrap">
-              {" "}
-              Web designer and front-end developer
-            </div>
-            <div className="flex shrink-0">
-              <img src={media} alt="" />
-            </div>
-          </div>
-          <div className="flex justify-center items-center mt-5 text-gray mb-0">
-            © Copyright 2024. Made by Raushan
-          </div>
-        </div>
+        <Footer />
       </div>
     </>
   );

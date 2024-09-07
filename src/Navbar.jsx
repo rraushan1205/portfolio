@@ -1,5 +1,5 @@
 import { useState } from 'react';
-
+import { Routes, Route, Outlet, Link } from "react-router-dom";
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -10,13 +10,13 @@ export default function Navbar() {
   return (
     <nav className="w-full bg-background h-[61px] px-4 sm:px-8 flex justify-between items-center">
       {/* Logo */}
-      <span className="font-bold text-white">Raushan</span>
+      <span className="font-bold text-white ml-[171px]">Raushan</span>
 
       {/* Desktop Menu */}
       <div className="hidden lg:flex gap-10 items-end text-gray">
-        <div><span className="text-primary">#</span>Home</div>
+        <div><span className="text-primary">#</span><Link to="/portfolio.io/">Home</Link></div>
         <div><span className="text-primary">#</span>Works</div>
-        <div><span className="text-primary">#</span>About-me</div>
+        <div><span className="text-primary">#</span><Link to="/portfolio.io/about">About-me</Link></div>
         <div><span className="text-primary">#</span>Contacts</div>
         <div>
           <select className="bg-transparent text-white" name="lang" id="lang">
