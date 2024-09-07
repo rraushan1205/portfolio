@@ -9,24 +9,24 @@ function Contact() {
     <>
       <div className="bg-background font-fira">
         <Navbar />
-        <div className="flex mt-[47px] text-white text-[24px] lg:text-[32px] mx-[171px]">
+        <div className="flex mt-[47px] text-white text-[24px] lg:text-[32px] mx-10 lg:mx-[171px]">
           <span className="text-primary">/</span>
           <div>contacts</div>
         </div>
-        <div className="mx-[171px] text-white text-[16px]">
+        <div className="mx-10 lg:mx-[171px] text-white text-[16px]">
           <div className="my-5">Who am i?</div>
-          <div className="grid grid-cols-2">
+          <div className="grid lg:grid-cols-2 grid-cols-1">
             <div className="mt-10">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit.
               Accusamus at iure, dolorem rerum ad eaque quisquam non obcaecati
               modi iusto repudiandae aliquid? Sed, iste. Assumenda?
             </div>
-            <div className="flex mx-6">
-              <div className="my-7 border-[1px] h-fit border-gray px-[8px] py-[8px] flex flex-col">
+            <div className="flex w-fit lg:ml-6 flex-col lg:flex-row">
+              <div className="my-4 lg:my-7 border-[1px] h-fit w-fit border-gray px-[8px] py-[8px] flex flex-col">
                 <span className="font-bold">Support me here!</span>
                 <span>+123456789</span>
               </div>
-              <div className="ml-2 my-7 border-[1px] border-gray h-fit px-[8px] py-[8px]">
+              <div className="lg:ml-2 my-2 lg:my-7 border-[1px] border-gray h-fit px-[8px] py-[8px]">
               <div className="text-white font-semibold text-base">
                   message me here
                 </div>
@@ -38,13 +38,13 @@ function Contact() {
             </div>
           </div>
         </div>
-        <img src={dot2} alt=""  className="absolute bottom-[200px] scale-[0.8]"/>
-        <div className="flex mt-[47px] text-white text-[24px] lg:text-[32px] mx-[171px]">
+        <img src={dot2} alt=""  className=" absolute bottom-[200px] hidden lg:flex scale-[0.8]"/>
+        <div className="flex mt-[47px] text-white text-[24px] lg:text-[32px] mx-10 lg:mx-[171px]">
           <span className="text-primary">#</span>
           <div>all-media</div>
         </div> 
-        <div className="mx-[171px] flex text-white mt-5 gap-8">
-          <span className="flex">
+        <div className="mx-10 lg:mx-[171px] flex text-white mt-5 gap-8 flex-col lg:flex-row">
+          <span className="flex ">
             <img src={x} alt="" />
             <span>@raushanraj1205</span>
           </span>
